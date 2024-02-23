@@ -25,7 +25,16 @@
     {
     <tbody>
         <tr>
-            <td>@x.Category.CategoryName</td>
+            <td>
+                @if (x.Category != null && x.Category.CategoryName != null)
+                {
+                    @x.Category.CategoryName
+                }
+                else
+                {
+                    @Html.Raw(""); //display nothing for the new records added
+                }
+            </td>
             <td>@x.Title</td>
             <td>@x.Year</td>
             <td>@x.Director</td>
