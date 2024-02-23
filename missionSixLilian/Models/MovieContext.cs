@@ -8,6 +8,9 @@ namespace missionSixLilian.Models
         {
         }
 
-        public DbSet<MovieSub> MovieSubmissions { get; set; }
+        public DbSet<MovieSub> Movies { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
     }
 }
+    
